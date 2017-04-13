@@ -1,4 +1,4 @@
-# Redis容器构建
+# Docker Redis Cluster
 
 ## 编译dockerfile
 docker build -t moredo/redis:3.2.8 .
