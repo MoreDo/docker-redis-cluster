@@ -1,0 +1,85 @@
+version: '1'
+services:
+    redis_6371:
+        container_name: "redis_6371"
+        image: moredo/redis:3.2.8 
+        ports:
+            - "6371:6371"
+	    - "16371:16371"
+	volumes:
+	    - /data/redis/6371:/data
+	environment: 
+	    - port=6371
+	    - bind=0.0.0.0
+	    - appendonly=yes
+	    - cluster=yes
+
+    redis_6372:
+        container_name: "redis_6372"
+        image: moredo/redis:3.2.8 
+        ports:
+            - "6372:6372"
+	    - "16372:16372"
+	volumes:
+	    - /data/redis/6372:/data
+	environment: 
+	    - port=6372
+	    - bind=0.0.0.0
+	    - appendonly=yes
+	    - cluster=yes
+
+    redis_6373:
+        container_name: "redis_6373"
+        image: moredo/redis:3.2.8 
+        ports:
+            - "6373:6373"
+	    - "16373:16373"
+	volumes:
+	    - /data/redis/6373:/data
+	environment: 
+	    - port=6373
+	    - bind=0.0.0.0
+	    - appendonly=yes
+	    - cluster=yes
+
+    redis_6374:
+        container_name: "redis_6374"
+        image: moredo/redis:3.2.8 
+        ports:
+            - "6374:6374"
+	    - "16374:16374"
+	volumes:
+	    - /data/redis/6374:/data
+	environment: 
+	    - port=6374
+	    - bind=0.0.0.0
+	    - appendonly=yes
+	    - cluster=yes
+
+    redis_6375:
+        container_name: "redis_6375"
+        image: moredo/redis:3.2.8 
+        ports:
+            - "6375:6375"
+	    - "16375:16375"
+	volumes:
+	    - /data/redis/6375:/data
+	environment: 
+	    - port=6375
+	    - bind=0.0.0.0
+	    - appendonly=yes
+	    - cluster=yes
+
+    redis_6376:
+        container_name: "redis_6376"
+        image: moredo/redis:3.2.8 
+        ports:
+            - "6376:6376"
+	    - "16376:16376"
+	volumes:
+	    - /data/redis/6376:/data
+	environment: 
+	    - port=6376
+	    - bind=0.0.0.0
+	    - appendonly=yes
+	    - cluster=yes	
