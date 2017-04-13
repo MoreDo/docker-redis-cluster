@@ -1,6 +1,6 @@
 FROM ubuntu:14.04
 
-ADD run.sh /run.sh
+ADD script/run.sh /run.sh
 
 RUN apt-get update \
 && mkdir /data \
